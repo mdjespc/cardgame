@@ -1,0 +1,9 @@
+Card types:
+
+-Troop
+-Spell
+-Hero
+-Weapon
+-Skill
+-Building
+-Terrain
