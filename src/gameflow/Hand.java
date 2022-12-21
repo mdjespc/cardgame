@@ -2,22 +2,22 @@ package gameflow;
 
 public class Hand {
     final private int MAX_SIZE = 10;
-    private C_Parent_Class[] cardsInHand;
+    private CardType[] cardsInHand;
     private int nElems;
 
     public Hand() {
-        cardsInHand = new C_Parent_Class[MAX_SIZE];
+        cardsInHand = new CardType[MAX_SIZE];
     }
 
     public int getMAX_SIZE() {
         return MAX_SIZE;
     }
 
-    public C_Parent_Class[] getCardsInHand() {
+    public CardType[] getCardsInHand() {
         return cardsInHand;
     }
 
-    public void setCardsInHand(C_Parent_Class[] cardsInHand) {
+    public void setCardsInHand(CardType[] cardsInHand) {
         this.cardsInHand = cardsInHand;
     }
 
@@ -30,15 +30,15 @@ public class Hand {
     }
 
     //Hand methods
-    public C_Parent_Class add(C_Parent_Class newCard){
+    public CardType add(CardType newCard){
         cardsInHand[nElems++] = newCard;
         return newCard;
     }
-    public C_Parent_Class removeByIndex(int index){
-        C_Parent_Class removedCard = cardsInHand[index];
+    public CardType removeByIndex(int index){
+        CardType removedCard = cardsInHand[index];
         cardsInHand[index] = null;
         for (int i = index; i < nElems; i++) {
-            C_Parent_Class tmp = cardsInHand[i + 1];
+            CardType tmp = cardsInHand[i + 1];
             cardsInHand[i] = tmp;
         }
         nElems--;

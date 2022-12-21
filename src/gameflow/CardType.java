@@ -1,23 +1,21 @@
 package gameflow;
 
-public abstract class C_Parent_Class implements Playable{
+public abstract class CardType implements Playable{
     public int cost;
-    public String region;
+    public String cardClass;
     public String title;
     public String description;
     public String subtype;
-    public String rarity;
 
-    public C_Parent_Class(int cost, String region, String title, String description, String subtype, String rarity) {
+    public CardType(int cost, String cardClass, String title, String description, String subtype) {
         this.cost = cost;
-        this.region = region;
+        this.cardClass = cardClass;
         this.title = title;
         this.description = description;
         this.subtype = subtype;
-        this.rarity = rarity;
     }
 
-    public C_Parent_Class() {
+    public CardType() {
     }
 
     public int getCost() {
@@ -28,12 +26,12 @@ public abstract class C_Parent_Class implements Playable{
         this.cost = cost;
     }
 
-    public String getRegion() {
-        return region;
+    public String getCardClass() {
+        return cardClass;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
+    public void setCardClass(String cardClass) {
+        this.cardClass = cardClass;
     }
 
     public String getTitle() {
@@ -60,21 +58,11 @@ public abstract class C_Parent_Class implements Playable{
         this.subtype = subtype;
     }
 
-    public String getRarity() {
-        return rarity;
+
+    public String toString()
+    {
+        return "";
     }
-
-    public void setRarity(String rarity) {
-        this.rarity = rarity;
-    }
-
-    public void onPlay(){
-
-    }
-    public void onDeath(){
-
-    }
-
     public String prettify()
     {
         return "";

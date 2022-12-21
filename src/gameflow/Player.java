@@ -3,8 +3,8 @@ package gameflow;
 public class Player {
     public Hand playerHand;
     public Deck playerDeck;
-    private int playerHP;
-    private int playerFP;
+    private int playerHitPoints;
+    private int playerGold;
     private boolean playerTurn;
     //TODO Action log
 
@@ -37,20 +37,20 @@ public class Player {
         this.playerDeck = playerDeck;
     }
 
-    public int getPlayerHP() {
-        return playerHP;
+    public int getPlayerHitPoints() {
+        return playerHitPoints;
     }
 
-    public void setPlayerHP(int playerHP) {
-        this.playerHP = playerHP;
+    public void setPlayerHitPoints(int playerHitPoints) {
+        this.playerHitPoints = playerHitPoints;
     }
 
-    public int getPlayerFP() {
-        return playerFP;
+    public int getPlayerGold() {
+        return playerGold;
     }
 
-    public void setPlayerFP(int playerFP) {
-        this.playerFP = playerFP;
+    public void setPlayerGold(int playerGold) {
+        this.playerGold = playerGold;
     }
 
     public boolean isPlayerTurn() {
@@ -65,8 +65,8 @@ public class Player {
     public Player initialize()
     {
         playerDeck = this.playerDeck.shuffle();
-        playerHP = 30;
-        playerFP = 0;
+        playerHitPoints = 30;
+        playerGold = 0;
         return this;
     }
 

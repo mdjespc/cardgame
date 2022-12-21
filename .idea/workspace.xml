@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed7a2c77-9a52-4bf9-b2a9-8ec36d8d5133" name="Changes" comment="">
+    <list default="true" id="ed7a2c77-9a52-4bf9-b2a9-8ec36d8d5133" name="Changes" comment="initial classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/C_Parent_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/C_Parent_Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameflow/C_Parent_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/CardType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Playable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Playable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Troop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Troop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/cardgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/cardgame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/dependencies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/dependencies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/desc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/desc.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663065127418</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial classes">
+      <created>1665917130353</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665917130353</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,5 +79,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial classes" />
   </component>
 </project>

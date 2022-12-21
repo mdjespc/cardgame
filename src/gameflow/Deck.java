@@ -3,19 +3,19 @@ package gameflow;
 
 public class Deck {
     final private int MAX_SIZE = 60;
-    private C_Parent_Class[] deckArray;
+    private CardType[] deckArray;
 
     private int nElems;
 
     public Deck() {
-        this.deckArray = new C_Parent_Class[MAX_SIZE];
+        this.deckArray = new CardType[MAX_SIZE];
         nElems = 0;
     }
 
     /*
     Must receive an array of length 60 and the number of filled spots. Indices with no cards should be set to null.
      */
-    public Deck(C_Parent_Class[] deckArray, int nCards) {
+    public Deck(CardType[] deckArray, int nCards) {
         this.deckArray = deckArray;
         nElems = nCards;
     }
@@ -24,11 +24,11 @@ public class Deck {
         return MAX_SIZE;
     }
 
-    public C_Parent_Class[] getDeckArray() {
+    public CardType[] getDeckArray() {
         return deckArray;
     }
 
-    public void setDeckArray(C_Parent_Class[] deckArray) {
+    public void setDeckArray(CardType[] deckArray) {
         this.deckArray = deckArray;
     }
 
@@ -38,7 +38,7 @@ public class Deck {
         return nElems == MAX_SIZE;
     }
     //Add Methods
-    public C_Parent_Class insertBottom(C_Parent_Class newCard) {
+    public CardType insertBottom(CardType newCard) {
         if(isFull())
         {
             return newCard;
@@ -47,17 +47,17 @@ public class Deck {
         return newCard;
     }
     //Remove Methods
-    public C_Parent_Class removeBottom()
+    public CardType removeBottom()
     {
-        C_Parent_Class removedCard = deckArray[nElems-1];
+        CardType removedCard = deckArray[nElems-1];
         deckArray[--nElems] = null;
         return removedCard;
     }
-    public C_Parent_Class removeByIndex(int index){
-        C_Parent_Class removedCard = deckArray[index];
+    public CardType removeByIndex(int index){
+        CardType removedCard = deckArray[index];
         deckArray[index] = null;
         for (int i = index; i < nElems; i++) {
-            C_Parent_Class tmp = deckArray[i + 1];
+            CardType tmp = deckArray[i + 1];
             deckArray[i] = tmp;
         }
         nElems--;
@@ -74,4 +74,14 @@ public class Deck {
         return shuffledDeck;
     }
 
+    public void printDeck()
+    {
+        for(CardType C : deckArray){
+            if(C != null)
+                System.out.println(C.toString());
+            else{
+                System.out.println("NULL");
+            }
+    }
+    }
 }
