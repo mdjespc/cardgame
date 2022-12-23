@@ -12,9 +12,9 @@ public class cardgame {
         {
             Troop t = new Troop(i, "NA", "NA", "NA", "NA", i, "NA", "NA", "NA");
             D.insertBottom(t);
-            t.toString();
+            //t.toString();
         }
-        D.shuffle();
+        D = D.shuffle();
         D.printDeck();
     }
 

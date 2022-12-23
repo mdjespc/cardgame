@@ -76,12 +76,10 @@ public class Deck {
 
     public void printDeck()
     {
+        System.out.println(nElems + " cards in deck\nMax Space: " + MAX_SIZE);
         for(CardType C : deckArray){
             if(C != null)
                 System.out.println(C.toString());
-            else{
-                System.out.println("NULL");
-            }
     }
     }
 }

@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed7a2c77-9a52-4bf9-b2a9-8ec36d8d5133" name="Changes" comment="initial classes">
+    <list default="true" id="ed7a2c77-9a52-4bf9-b2a9-8ec36d8d5133" name="Changes" comment="CardType">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/C_Parent_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/CardType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/Playable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Playable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameflow/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/Troop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/Troop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameflow/cardgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameflow/cardgame.java" afterDir="false" />
     </list>
@@ -66,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665917130353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CardType">
+      <created>1671594967731</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671594967731</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial classes" />
+    <MESSAGE value="CardType" />
+    <option name="LAST_COMMIT_MESSAGE" value="CardType" />
   </component>
 </project>

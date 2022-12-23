@@ -11,15 +11,13 @@ public class Troop extends CardType{
         super();
     }
 
-    public Troop(int cost, String cardClass, String title, String description, String subtype, String rarity) {
-        super(cost, cardClass, title, description, subtype);
-    }
-
     public Troop(int cost, String cardClass, String title, String description, String subtype, int troopPower,
                  String troopType, String troopRange, String troopLane) {
         super(cost, cardClass, title, description, subtype);
-
-
+        this.troopPower = troopPower;
+        this.troopType = troopType;
+        this.troopRange = troopRange;
+        this.troopLane = troopLane;
     }
 
     public int getTroopPower() {
