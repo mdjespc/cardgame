@@ -14,8 +14,13 @@ public class cardgame {
             D.insertBottom(t);
             //t.toString();
         }
-        D = D.shuffle();
-        D.printDeck();
+        //D = D.shuffle();
+        //D.printDeck();
+        Hand x = new Hand();
+        Player p1 = new Player(x, D);
+        p1.initialize();
+        p1.playerHand = p1.createMulligan();
+        p1.playerHand.printHand();
     }
 
 

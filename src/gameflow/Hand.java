@@ -6,6 +6,7 @@ public class Hand {
     private int nElems;
 
     public Hand() {
+        nElems = 0;
         cardsInHand = new CardType[MAX_SIZE];
     }
 
@@ -30,6 +31,11 @@ public class Hand {
     }
 
     //Hand methods
+    boolean isEmpty()
+    {
+        return this.nElems == 0 && this.getCardsInHand()[0] == null;
+    }
+
     public CardType add(CardType newCard){
         cardsInHand[nElems++] = newCard;
         return newCard;
@@ -43,5 +49,23 @@ public class Hand {
         }
         nElems--;
         return removedCard;
+    }
+
+    public void printHand(){
+        if(isEmpty()) {
+            System.err.println("Hand is empty");
+            return;
+        }
+        for(CardType C : this.getCardsInHand())
+        {
+            if(C instanceof Troop)
+            {
+                System.out.print(C.prettify());
+            }
+            else {
+                //System.out.println(C.toString());
+            }
+
+        }
     }
 }

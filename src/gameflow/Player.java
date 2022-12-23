@@ -1,4 +1,5 @@
 package gameflow;
+import metadata.constants;
 
 public class Player {
     public Hand playerHand;
@@ -62,17 +63,31 @@ public class Player {
     }
 
     //Player methods
+    /*
+    Initializes the player by shuffling its deck and setting its starting values e.g. hp, G, etc.
+     */
     public Player initialize()
     {
         playerDeck = this.playerDeck.shuffle();
-        playerHitPoints = 30;
-        playerGold = 0;
+        playerHitPoints = constants.PLAYERSTARTINGHITPOINTS;
+        playerGold = constants.PLAYERSTARTINGGOLD;
         return this;
     }
 
-    public void draw(int count){
+
+    public Hand draw(int count){
+        Hand prevHandState = this.playerHand;
         for (int i = 0; i < count; i++){
             this.playerHand.add(this.playerDeck.removeByIndex(0));
+
         }
+        return this.playerHand;
+    }
+
+    Hand createMulligan() throws AssertionError{
+        assert playerHand.getnElems() == 0 : "Mulligan creation requires an empty player hand. Player hand contains " +
+                playerHand.getnElems() + " cards.";
+        Hand mulligan = this.draw(metadata.constants.MULLIGANCOUNT);
+        return mulligan;
     }
 }
